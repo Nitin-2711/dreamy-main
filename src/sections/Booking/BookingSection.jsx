@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar as CalendarIcon, Clock, Users, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { Calendar as CalendarIcon, Clock, Users, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, X, Info } from 'lucide-react';
 const BookingSection = () => {
   // Booking States
   const [checkInDate, setCheckInDate] = useState(null);
@@ -326,9 +326,20 @@ const BookingSection = () => {
                       </div>
                     </div>
 
-                    <p className="text-center text-[11px] text-theme-text-secondary italic -mt-2 px-2">
-                      Choose your preferred studio access timings. Final availability will be confirmed on WhatsApp.
-                    </p>
+                    {/* Information Box */}
+                    <div className="p-4 rounded-xl border border-glass-border bg-theme-bg/50 flex items-start gap-3">
+                      <div className="mt-0.5 text-warm-beige shrink-0">
+                        <Info size={16} />
+                      </div>
+                      <div className="space-y-2">
+                        <p className="text-[11px] md:text-xs text-theme-text-secondary leading-relaxed">
+                          Default studio timings are 11:00 AM to 10:00 PM. You can customize your preferred entry and exit time while booking, subject to availability.
+                        </p>
+                        <p className="text-[11px] md:text-xs text-theme-text-secondary leading-relaxed">
+                          Self Check-in is available. Complete access details will be shared on WhatsApp after your booking is confirmed.
+                        </p>
+                      </div>
+                    </div>
 
                     {/* Guests selection */}
                     <div className="p-4 rounded-xl border border-glass-border flex justify-between items-center">
