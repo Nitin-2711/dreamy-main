@@ -19,8 +19,9 @@ const HeroSection = () => {
           src="/img/plaza_environment.webp"
           alt="Galaxy Blue Sapphire Plaza Exterior"
           className="w-full h-full object-cover"
-          fetchPriority="high"
+          fetchpriority="high"
           loading="eager"
+          decoding="sync"
         />
         {/* Subtle Dark Overlay (25%) to improve text readability without hiding the building */}
         <div className="absolute inset-0 bg-[#0F1115]/25 z-[1]" />
