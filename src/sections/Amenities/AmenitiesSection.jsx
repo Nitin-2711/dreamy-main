@@ -129,7 +129,7 @@ const AmenitiesSection = () => {
           {/* Visual Showcase - Column 7 */}
           <div className="lg:col-span-7 aspect-video lg:aspect-auto relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px]">
             <LazyImage 
-              src="/img/balcony_skyline_view.jpeg" 
+              src="/img/bb.PNG" 
               alt="Balcony View at Galaxy Blue Sapphire" 
               className="w-full h-full"
               imageClassName="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
@@ -154,25 +154,25 @@ const AmenitiesSection = () => {
             <div>
               <span className="text-[10px] tracking-[0.3em] uppercase text-warm-beige block mb-2 font-mono">Premium Spotlight</span>
               <h3 className="font-heading text-2xl md:text-3xl text-theme-text leading-tight">
-                Cinematic <span className="italic text-warm-beige">Balcony View</span>
+                Private <span className="italic text-warm-beige">Balcony View</span>
               </h3>
             </div>
 
             <p className="text-theme-text-secondary text-sm md:text-base leading-relaxed font-normal">
-              Indulge in a calm luxury atmosphere overlooking the sparkling night city lights of Greater Noida West. With floor-to-ceiling windows stepping out to a peaceful viewing balcony perfect for lifestyle & brand shoots.
+              Enjoy a peaceful private balcony with fresh air and an open city view—ideal for relaxing, lifestyle photography, content creation, or taking a break between shoots.
             </p>
 
             {/* Coffee aesthetic text detail */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 rounded-xl bg-warm-beige/5 border border-glass-border">
               <span className="text-2xl">☕</span>
               <div className="text-xs text-theme-text-secondary leading-relaxed font-normal">
-                Perfect for outdoor lighting setups, lifestyle photography, or unwinding between creative sessions high above the urban hustle.
+                Perfect for lifestyle shoots, natural light portraits, coffee breaks, and quiet moments between creative sessions.
               </div>
             </div>
 
             {/* Micro Interaction Element */}
             <div className="flex items-center gap-2 text-xs text-warm-beige font-mono uppercase tracking-widest group-hover:translate-x-2 transition-transform duration-300">
-              <span>Premium Shoot Location</span>
+              <span>Explore Balcony</span>
               <span>→</span>
             </div>
           </div>
