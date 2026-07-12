@@ -6,7 +6,7 @@ const BookingSection = () => {
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [checkInTime, setCheckInTime] = useState('11:00 AM');
-  const [checkOutTime, setCheckOutTime] = useState('10:00 AM');
+  const [checkOutTime, setCheckOutTime] = useState('10:00 PM');
   const [guests, setGuests] = useState(1);
   const [showCalendarPopup, setShowCalendarPopup] = useState(false);
   const [activeDateSelector, setActiveDateSelector] = useState('in'); // 'in' or 'out'
@@ -293,12 +293,13 @@ const BookingSection = () => {
                     {/* Check-In / Check-Out Time selection */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl border border-glass-border hover:border-warm-beige/40 relative">
-                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Preferred Time Slot</label>
+                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Preferred Entry Time</label>
                         <select 
                           value={checkInTime} 
                           onChange={(e) => setCheckInTime(e.target.value)}
                           className="bg-transparent text-theme-text border-none outline-none font-medium w-full cursor-pointer pr-4 appearance-none focus:ring-0"
                         >
+                          <option value="08:00 AM" className="bg-theme-bg text-theme-text">08:00 AM</option>
                           <option value="09:00 AM" className="bg-theme-bg text-theme-text">09:00 AM</option>
                           <option value="11:00 AM" className="bg-theme-bg text-theme-text">11:00 AM (Default)</option>
                           <option value="01:00 PM" className="bg-theme-bg text-theme-text">01:00 PM</option>
@@ -310,22 +311,26 @@ const BookingSection = () => {
                       </div>
 
                       <div className="p-4 rounded-xl border border-glass-border hover:border-warm-beige/40 relative">
-                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">End Time</label>
+                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Preferred Exit Time</label>
                         <select 
                           value={checkOutTime} 
                           onChange={(e) => setCheckOutTime(e.target.value)}
                           className="bg-transparent text-theme-text border-none outline-none font-medium w-full cursor-pointer pr-4 appearance-none focus:ring-0"
                         >
-                          <option value="08:00 AM" className="bg-theme-bg text-theme-text">08:00 AM</option>
-                          <option value="10:00 AM" className="bg-theme-bg text-theme-text">10:00 AM (Default)</option>
-                          <option value="12:00 PM" className="bg-theme-bg text-theme-text">12:00 PM</option>
-                          <option value="02:00 PM" className="bg-theme-bg text-theme-text">02:00 PM</option>
+                          <option value="04:00 PM" className="bg-theme-bg text-theme-text">04:00 PM</option>
+                          <option value="06:00 PM" className="bg-theme-bg text-theme-text">06:00 PM</option>
+                          <option value="08:00 PM" className="bg-theme-bg text-theme-text">08:00 PM</option>
+                          <option value="10:00 PM" className="bg-theme-bg text-theme-text">10:00 PM (Default)</option>
                         </select>
                         <div className="absolute top-6 right-4 pointer-events-none text-warm-beige/40">
                           <Clock size={14} />
                         </div>
                       </div>
                     </div>
+
+                    <p className="text-center text-[11px] text-theme-text-secondary italic -mt-2 px-2">
+                      Choose your preferred studio access timings. Final availability will be confirmed on WhatsApp.
+                    </p>
 
                     {/* Guests selection */}
                     <div className="p-4 rounded-xl border border-glass-border flex justify-between items-center">
