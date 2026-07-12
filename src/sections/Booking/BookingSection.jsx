@@ -129,7 +129,7 @@ const BookingSection = () => {
   };
 
   return (
-    <section id="booking" className="py-32 relative bg-theme-bg z-10 transition-colors duration-700">
+    <section id="booking" className="py-16 md:py-32 relative bg-theme-bg z-10 transition-colors duration-700">
       {/* Background Ambience (Optimized GPU radial-gradients) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div 
@@ -142,10 +142,10 @@ const BookingSection = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -158,14 +158,14 @@ const BookingSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-4xl md:text-5xl text-theme-text"
+            className="font-heading text-3xl md:text-5xl text-theme-text"
           >
             Book Your <span className="italic text-warm-beige">Studio Session</span>
           </motion.h2>
         </div>
 
         {/* Content Wrapper */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
           
           {/* Left Column: Visual Summary & Details */}
           <div className="space-y-8 h-full">
@@ -174,7 +174,7 @@ const BookingSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="glass-card p-8 md:p-10 space-y-6 h-full flex flex-col justify-center"
+              className="glass-card p-6 md:p-10 space-y-6 h-full flex flex-col justify-center"
             >
               <h3 className="font-heading text-2xl text-theme-text">Premium Production Space</h3>
               <p className="text-theme-text/80 leading-relaxed font-normal text-sm">
@@ -224,7 +224,7 @@ const BookingSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.6 }}
-                  className="glass-card p-8 md:p-10 relative overflow-hidden"
+                  className="glass-card p-6 md:p-10 relative overflow-hidden"
                 >
                   {/* Decorative glowing lines */}
                   <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-warm-beige/40 to-transparent"></div>
@@ -243,7 +243,7 @@ const BookingSection = () => {
 
                   <form onSubmit={handleBookingSubmit} className="space-y-6">
                     {/* Check In / Out Custom Dropdown Buttons */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Check-In selector */}
                       <button
                         type="button"
@@ -290,7 +290,7 @@ const BookingSection = () => {
                     </div>
 
                     {/* Check-In / Check-Out Time selection */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl border border-glass-border hover:border-warm-beige/40 relative">
                         <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Preferred Time Slot</label>
                         <select 
@@ -375,7 +375,7 @@ const BookingSection = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
-                        className="absolute inset-x-6 top-20 z-50 bg-theme-bg border border-warm-beige/40 p-6 rounded-2xl shadow-[0_30px_70px_rgba(0,0,0,0.9)]"
+                        className="absolute inset-x-2 md:inset-x-6 top-20 z-50 bg-theme-bg border border-warm-beige/40 p-4 md:p-6 rounded-2xl shadow-[0_30px_70px_rgba(0,0,0,0.9)]"
                       >
                         {/* Header */}
                         <div className="flex justify-between items-center mb-6 border-b border-glass-border pb-3">
