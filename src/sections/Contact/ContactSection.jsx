@@ -39,14 +39,7 @@ const ContactSection = () => {
             <MessageCircle size={18} />
             <span className="uppercase tracking-widest text-xs font-semibold">Book via WhatsApp</span>
           </a>
-          
-          <a 
-            href="tel:+918700961196" 
-            className="group relative w-full sm:w-auto px-8 md:px-10 py-4 bg-transparent border border-warm-beige/30 hover:border-warm-beige text-warm-beige rounded-full font-medium transition-all duration-300 hover:bg-warm-beige/10 flex items-center justify-center gap-3"
-          >
-            <Phone size={18} />
-            <span className="uppercase tracking-widest text-xs font-semibold">Contact Now</span>
-          </a>
+
         </div>
 
         <div className="mt-16 pt-8 border-t border-glass-border flex flex-wrap justify-center gap-8 md:gap-12">
