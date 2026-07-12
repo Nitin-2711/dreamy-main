@@ -38,13 +38,13 @@ const StorySection = () => {
             variants={itemVariants}
             className="font-heading text-3xl md:text-5xl text-theme-text leading-[1.3] font-medium mb-10 text-glow"
           >
-            A sanctuary crafted for the <span className="italic text-warm-beige font-normal">modern wanderer.</span> <br className="hidden md:block" />
-            Where the pulse of the city meets the calm of a private haven.
+            A canvas crafted for the <span className="italic text-warm-beige font-normal">modern creator.</span> <br className="hidden md:block" />
+            Where professional aesthetics meet the calm of a private luxury haven.
           </motion.h2>
 
           <motion.div variants={itemVariants} className="max-w-2xl mx-auto">
             <p className="text-theme-text-secondary text-lg leading-relaxed font-normal">
-              Elevated high above the vibrant streets of Galaxy Blue Sapphire Plaza, Dreamy Studio isn’t just a place to stay—it’s a carefully curated escape for urban luxury and creator living. Designed with deep, matte tones and warm highlights, it embraces the beauty of shadow and light, creating an atmosphere that feels intimately yours.
+              Elevated high above the vibrant streets of Galaxy Blue Sapphire Plaza, Dreamy Studio isn’t just another space—it’s a carefully curated production environment for premium content creation. Designed with deep, matte tones, luxury lighting, and bespoke aesthetics, it provides the perfect backdrop for photography, videography, podcasting, and high-level meetings.
             </p>
           </motion.div>
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, PhoneCall } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 
 const MobileStickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,16 +37,27 @@ const MobileStickyCTA = () => {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="fixed bottom-0 left-0 w-full z-40 px-4 pb-4 pt-2 md:hidden pointer-events-none"
         >
-          <div className="w-full glass shadow-[0_-10px_30px_rgba(0,0,0,0.15)] rounded-2xl border border-glass-border p-4 flex items-center justify-center pointer-events-auto">
-            {/* CTA action pill */}
+          <div className="w-full glass shadow-[0_-10px_30px_rgba(0,0,0,0.15)] rounded-2xl border border-glass-border p-3 flex items-center justify-between pointer-events-auto gap-3">
+            {/* WhatsApp CTA */}
             <a
               href="https://wa.me/918700961196?text=Hi%20Dreamy%20Studios%2021,%20I%20would%20like%20to%20know%20the%20pricing."
               target="_blank"
               rel="noreferrer"
-              className="w-full px-5 py-3.5 rounded-xl bg-warm-beige text-[#0F1115] font-semibold uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:shadow-[0_0_15px_rgba(200,169,106,0.3)] transition-all animate-pulse"
+              className="flex-1 px-4 py-3 rounded-xl bg-warm-beige text-[#0F1115] font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:shadow-[0_0_15px_rgba(200,169,106,0.3)] transition-all"
             >
-              <PhoneCall size={16} />
-              Contact for Price
+              <MessageCircle size={16} />
+              WhatsApp
+            </a>
+            
+            {/* Instagram CTA */}
+            <a
+              href="https://www.instagram.com/dreamy.studios21?igsh=OXo0N3o0djh0ZzIx"
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 px-4 py-3 rounded-xl bg-transparent border border-warm-beige/30 text-warm-beige font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:bg-warm-beige/10 transition-all"
+            >
+              <FaInstagram size={16} />
+              Instagram
             </a>
           </div>
         </motion.div>

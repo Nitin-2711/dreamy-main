@@ -37,12 +37,16 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="text-warm-beige text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium">
-            A Luxury Escape Inside Galaxy Blue Sapphire
+            Premium Creator Space Inside Galaxy Blue Sapphire
           </p>
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white max-w-5xl mx-auto leading-[1.1] mb-8 text-glow select-none">
+          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white max-w-5xl mx-auto leading-[1.1] mb-6 text-glow select-none">
             Dreamy <br className="md:hidden" />
             <span className="italic text-warm-beige font-light">Studio</span>
           </h1>
+
+          <p className="text-theme-text-secondary text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-10 px-4 leading-relaxed">
+            A premium sanctuary designed for Photography • Videography • Podcast Recording • Product & Fashion Shoots • Content Creation • Meetings
+          </p>
         </motion.div>
 
         <motion.div
@@ -60,7 +64,7 @@ const HeroSection = () => {
           >
             <div className="absolute inset-0 bg-warm-beige/10 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1]"></div>
             <span className="relative flex items-center gap-3 text-warm-beige text-sm tracking-widest uppercase font-medium">
-              Explore The Space
+              Explore Studio
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:translate-x-1 transition-transform duration-300">
                 <path d="M1 6H11M11 6L6 1M11 6L6 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

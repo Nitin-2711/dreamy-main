@@ -4,23 +4,23 @@ import LazyImage from '../../components/ui/LazyImage';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Cozy Nights",
-      desc: "Dim the lights, cast a warm glow, and unwind in absolute comfort.",
+      title: "Premium Interior",
+      desc: "Deep, matte tones and luxurious textures carefully designed to serve as the perfect backdrop for professional shoots.",
       img: "/img/interior_ambiance.jpeg"
     },
     {
-      title: "City Lights",
-      desc: "Watch the energy of Noida West from the serenity of your high-rise retreat.",
+      title: "Natural Lighting",
+      desc: "Expansive floor-to-ceiling windows flood the space with soft, directional natural light ideal for photography.",
       img: "/img/balcony_skyline_view.jpeg"
     },
     {
-      title: "Calm Productivity",
-      desc: "A dedicated minimalist workspace designed to spark your best ideas.",
+      title: "Clean & Comfortable",
+      desc: "A pristine environment with modern air conditioning and a dedicated workspace to spark your best ideas.",
       img: "/img/the_workspace.jpeg"
     },
     {
-      title: "Urban Pulse",
-      desc: "Step down directly into a thriving premium hub of shopping, dining, and world-class entertainment.",
+      title: "Prime Location",
+      desc: "Located centrally in Galaxy Blue Sapphire Plaza with easy parking, high-speed WiFi, and 24/7 security.",
       img: "/img/plaza_night.webp"
     }
   ];
@@ -36,7 +36,7 @@ const ExperienceSection = () => {
           transition={{ duration: 1 }}
         >
           <h2 className="font-heading text-4xl md:text-5xl text-theme-text">
-            The <span className="italic text-warm-beige">Experience</span>
+            Why <span className="italic text-warm-beige">Choose Us</span>
           </h2>
         </motion.div>
 

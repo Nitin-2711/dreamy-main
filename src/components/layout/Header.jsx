@@ -111,7 +111,7 @@ const Header = () => {
               }`}
             >
               <Calendar size={14} className="group-hover:scale-110 transition-transform" />
-              <span className="uppercase tracking-widest text-[10px] font-bold">Contact for Price</span>
+              <span className="uppercase tracking-widest text-[10px] font-bold">Get Pricing</span>
             </a>
             
             {/* Instagram Link */}
@@ -199,7 +199,7 @@ const Header = () => {
                 className="w-full py-4 rounded-xl bg-warm-beige text-[#0F1115] font-semibold text-center uppercase tracking-widest text-xs shadow-lg hover:shadow-warm-beige/30 transition-all flex items-center justify-center gap-2"
               >
                 <Calendar size={16} />
-                Contact for Price
+                Get Pricing
               </a>
               
               <a
@@ -209,7 +209,7 @@ const Header = () => {
                 className="w-full py-4 rounded-xl border border-glass-border text-theme-text font-semibold text-center uppercase tracking-widest text-xs hover:bg-warm-beige/5 transition-all flex items-center justify-center gap-2"
               >
                 <MessageCircle size={16} />
-                Chat with Concierge
+                Book via WhatsApp
               </a>
               
               <a

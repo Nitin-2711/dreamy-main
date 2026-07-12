@@ -7,6 +7,7 @@ const InteractiveShowcase = lazy(() => import('../sections/Experience/Interactiv
 const ExperienceSection = lazy(() => import('../sections/Experience/ExperienceSection'));
 const AmenitiesSection = lazy(() => import('../sections/Amenities/AmenitiesSection'));
 const GallerySection = lazy(() => import('../sections/Gallery/GallerySection'));
+const ReviewsSection = lazy(() => import('../sections/Reviews/ReviewsSection'));
 const BookingSection = lazy(() => import('../sections/Booking/BookingSection'));
 const ContactSection = lazy(() => import('../sections/Contact/ContactSection'));
 const FooterSection = lazy(() => import('../sections/Footer/FooterSection'));
@@ -40,6 +41,10 @@ const Home = () => {
       
       <Suspense fallback={<SectionFallback />}>
         <GallerySection />
+      </Suspense>
+      
+      <Suspense fallback={<SectionFallback />}>
+        <ReviewsSection />
       </Suspense>
       
       <Suspense fallback={<SectionFallback />}>

@@ -5,7 +5,7 @@ import LazyImage from '../../components/ui/LazyImage';
 
 const GallerySection = () => {
   const { theme } = useTheme();
-  const [activeTab, setActiveTab] = useState('exterior'); // Default to exterior as requested by user to prioritize real plaza photos
+  const [activeTab, setActiveTab] = useState('interior'); // Default to interior since we have more content there
   const [selectedImg, setSelectedImg] = useState(null);
 
   const tabs = [
@@ -16,78 +16,54 @@ const GallerySection = () => {
   const galleryData = {
     exterior: [
       {
-        src: "/img/galaxy_blue_sapphire_skyline.jpeg",
-        title: "Premium Glassware",
-        tag: "Kitchen Accessories",
-        desc: "Curated selection of fine glassware for dining and entertainment."
-      },
-      {
-        src: "/img/galaxy_blue_sapphire_architecture.jpeg",
-        title: "Modern Living Area",
-        tag: "Living Space",
-        desc: "Open-plan living space seamlessly integrating comfort and style."
-      },
-      {
-        src: "/img/galaxy_blue_sapphire_night.jpeg",
-        title: "Modern Kitchen",
-        tag: "Culinary Space",
-        desc: "Fully equipped modern kitchen with premium built-in appliances."
-      },
-      {
-        src: "/img/galaxy_blue_sapphire_entrance.jpeg",
-        title: "Sleek Kitchenette",
-        tag: "Kitchenette",
-        desc: "Contemporary kitchen design with ample space and modern amenities."
+        src: "/img/plaza_environment.webp",
+        title: "Premium Commercial Hub",
+        tag: "Prime Location",
+        desc: "A bustling high-street commercial destination perfect for urban shoots."
       },
       {
         src: "/img/plaza_entrance_lobby.webp",
         title: "Galaxy Blue Sapphire Exterior",
         tag: "Building Exterior",
         desc: "The stunning modern architecture of Galaxy Blue Sapphire Plaza."
-      },
-      {
-        src: "/img/plaza_environment.webp",
-        title: "Premium Commercial Hub",
-        tag: "Urban Center",
-        desc: "A bustling high-street retail and commercial destination."
       }
     ],
     interior: [
       {
-        src: "/img/the_lounge.jpeg",
-        title: "Premium Decor",
-        tag: "Interior Accents",
-        desc: "Elegant decorative accents adding a touch of luxury to the living space."
+        src: "/img/galaxy_blue_sapphire_architecture.jpeg",
+        title: "Creative Lounge",
+        tag: "Meeting Space",
+        desc: "Open-plan lounge space seamlessly integrating comfort for team collaborations."
       },
       {
         src: "/img/the_suite.jpeg",
-        title: "Elegant Bedroom Suite",
-        tag: "Bedroom",
-        desc: "Luxurious king-size bed with premium linens for ultimate comfort."
+        title: "Lifestyle Set",
+        tag: "Bedroom Setup",
+        desc: "Luxurious king-size bed setup ideal for fashion and lifestyle photography."
+      },
+      {
+        src: "/img/galaxy_blue_sapphire_night.jpeg",
+        title: "Prop Kitchen",
+        tag: "Culinary Set",
+        desc: "Fully equipped modern kitchen setup for food styling and brand shoots."
       },
       {
         src: "/img/the_workspace.jpeg",
-        title: "Tea & Coffee Station",
+        title: "Client Refreshments",
         tag: "Beverage Station",
-        desc: "Fully equipped beverage station with premium tea and coffee selections."
+        desc: "Premium tea and coffee station to keep the creative energy flowing."
       },
       {
-        src: "/img/interior_ambiance.jpeg",
-        title: "Master Bedroom",
-        tag: "Bedroom",
-        desc: "Spacious master bedroom featuring bespoke interior design and warm lighting."
+        src: "/img/the_lounge.jpeg",
+        title: "Studio Props",
+        tag: "Interior Accents",
+        desc: "Elegant decorative accents adding a touch of luxury to your creative sets."
       },
       {
         src: "/img/balcony_skyline_view.jpeg",
-        title: "Warm Ambiance",
+        title: "Ambient Lighting",
         tag: "Lighting Design",
-        desc: "Cozy bedside lighting creating a relaxing and premium atmosphere."
-      },
-      {
-        src: "/img/modern_kitchenette.jpeg",
-        title: "Premium Cookware",
-        tag: "Kitchen Accessories",
-        desc: "High-quality cookware provided for your culinary needs."
+        desc: "Cozy lighting creating a relaxing and premium atmosphere for evening sessions."
       }
     ]
   };

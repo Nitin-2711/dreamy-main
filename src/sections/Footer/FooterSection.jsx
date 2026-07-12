@@ -29,7 +29,7 @@ const FooterSection = () => {
               DREAMY STUDIO
             </span>
             <p className="text-theme-text-secondary text-sm max-w-sm font-normal leading-relaxed">
-              A handcrafted luxury high-rise escape inside Galaxy Blue Sapphire Plaza. Designed for creators, dreamers, and refined urban living.
+              A premium creative studio inside Galaxy Blue Sapphire Plaza. Designed for photographers, brands, and content creators.
             </p>
           </div>
 

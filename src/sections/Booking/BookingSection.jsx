@@ -160,7 +160,7 @@ const BookingSection = () => {
             viewport={{ once: true }}
             className="font-heading text-4xl md:text-5xl text-theme-text"
           >
-            Reserve Your <span className="italic text-warm-beige">Cinematic Stay</span>
+            Book Your <span className="italic text-warm-beige">Studio Session</span>
           </motion.h2>
         </div>
 
@@ -176,9 +176,9 @@ const BookingSection = () => {
               transition={{ duration: 0.8 }}
               className="glass-card p-8 md:p-10 space-y-6 h-full flex flex-col justify-center"
             >
-              <h3 className="font-heading text-2xl text-theme-text">Your Premium Gateway</h3>
+              <h3 className="font-heading text-2xl text-theme-text">Premium Production Space</h3>
               <p className="text-theme-text/80 leading-relaxed font-normal text-sm">
-                Experience high-rise modern luxury at Greater Noida West. With day and night customization, premium ambient lighting, and bespoke design.
+                Experience high-rise modern luxury at Greater Noida West. With day and night customization, premium ambient lighting, and bespoke design perfect for your next shoot.
               </p>
 
               <div className="space-y-4 pt-4 border-t border-glass-border">
@@ -231,7 +231,7 @@ const BookingSection = () => {
 
                   <div className="flex justify-between items-center mb-8">
                     <div>
-                      <span className="text-xs uppercase tracking-widest text-warm-beige font-mono">Plan Your Stay</span>
+                      <span className="text-xs uppercase tracking-widest text-warm-beige font-mono">Plan Your Shoot</span>
                       <div className="flex items-baseline gap-1 mt-1">
                         <span className="text-xl font-heading text-theme-text">Request Pricing</span>
                       </div>
@@ -257,7 +257,7 @@ const BookingSection = () => {
                             : 'border-glass-border hover:border-warm-beige/40'
                         }`}
                       >
-                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Check In</span>
+                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Preferred Date</span>
                         <span className="block font-heading text-lg mt-1 truncate">
                           {checkInDate ? formatDateString(checkInDate) : 'Select Date'}
                         </span>
@@ -279,7 +279,7 @@ const BookingSection = () => {
                             : 'border-glass-border hover:border-warm-beige/40'
                         }`}
                       >
-                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Check Out</span>
+                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">End Date</span>
                         <span className="block font-heading text-lg mt-1 truncate">
                           {checkOutDate ? formatDateString(checkOutDate) : 'Select Date'}
                         </span>
@@ -292,7 +292,7 @@ const BookingSection = () => {
                     {/* Check-In / Check-Out Time selection */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl border border-glass-border hover:border-warm-beige/40 relative">
-                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Check-in Time</label>
+                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Preferred Time Slot</label>
                         <select 
                           value={checkInTime} 
                           onChange={(e) => setCheckInTime(e.target.value)}
@@ -309,7 +309,7 @@ const BookingSection = () => {
                       </div>
 
                       <div className="p-4 rounded-xl border border-glass-border hover:border-warm-beige/40 relative">
-                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">Check-out Time</label>
+                        <label className="block text-[10px] uppercase tracking-widest text-theme-text-secondary mb-1">End Time</label>
                         <select 
                           value={checkOutTime} 
                           onChange={(e) => setCheckOutTime(e.target.value)}
@@ -329,8 +329,8 @@ const BookingSection = () => {
                     {/* Guests selection */}
                     <div className="p-4 rounded-xl border border-glass-border flex justify-between items-center">
                       <div>
-                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Guests count</span>
-                        <span className="block font-heading text-lg mt-1">{guests} {guests > 1 ? 'Guests' : 'Guest'}</span>
+                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Team Size</span>
+                        <span className="block font-heading text-lg mt-1">{guests} {guests > 1 ? 'People' : 'Person'}</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <button
@@ -381,7 +381,7 @@ const BookingSection = () => {
                         <div className="flex justify-between items-center mb-6 border-b border-glass-border pb-3">
                           <div className="flex items-center gap-2">
                             <span className="text-xs tracking-[0.2em] uppercase font-mono text-warm-beige font-semibold">
-                              {activeDateSelector === 'in' ? 'Select Check-In Date' : 'Select Check-Out Date'}
+                              {activeDateSelector === 'in' ? 'Select Preferred Date' : 'Select End Date'}
                             </span>
                           </div>
                           <button

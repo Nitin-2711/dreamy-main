@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Wifi, Tv, Monitor, Wind, Coffee, Lightbulb, Building, Moon, Sunset } from 'lucide-react';
+import { Wifi, Car, Wind, ArrowUpDown, Sun, Zap, ShieldCheck, Shirt, Bath, TrainFront, Sunset } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import LazyImage from '../../components/ui/LazyImage';
 
@@ -8,13 +8,15 @@ const AmenitiesSection = () => {
 
   const amenities = [
     { icon: Wifi, label: "High-Speed WiFi", desc: "Seamless and secure fiber connectivity." },
-    { icon: Tv, label: "Smart TV", desc: "Premium streaming access for cinema nights." },
-    { icon: Monitor, label: "Workspace Desk", desc: "Creator-focused, ergonomic setup." },
-    { icon: Wind, label: "Climate Control AC", desc: "Whisper-quiet luxury cooling." },
-    { icon: Coffee, label: "Kitchenette", desc: "Modern amenities for quick dining." },
-    { icon: Lightbulb, label: "Ambient Lighting", desc: "Customizable warm hue control." },
-    { icon: Building, label: "City View", desc: "Mesmerizing views of Greater Noida West." },
-    { icon: Moon, label: "Cozy Night Lighting", desc: "Perfect evening wind-down setting." }
+    { icon: Car, label: "Private Parking", desc: "Reserved and secure parking spaces." },
+    { icon: Wind, label: "Air Conditioning", desc: "Whisper-quiet cooling for flawless audio recording." },
+    { icon: ArrowUpDown, label: "High-Speed Lift", desc: "Direct and fast access to your floor." },
+    { icon: Sun, label: "Natural Light", desc: "Expansive windows for perfect daytime shoots." },
+    { icon: Zap, label: "Power Backup", desc: "100% uninterrupted electricity for continuous shooting." },
+    { icon: ShieldCheck, label: "24/7 Security", desc: "Premium building security and surveillance." },
+    { icon: Shirt, label: "Changing Room", desc: "Private space for outfit changes." },
+    { icon: Bath, label: "Luxury Washroom", desc: "Pristine, fully-equipped private washroom." },
+    { icon: TrainFront, label: "Metro Connectivity", desc: "Seamless transit from Noida Sector 52." }
   ];
 
   const containerVariants = {
@@ -58,7 +60,7 @@ const AmenitiesSection = () => {
             viewport={{ once: true }}
             className="text-warm-beige text-xs tracking-[0.4em] uppercase mb-4 block font-semibold"
           >
-            The Space & Comforts
+            Studio Amenities
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 25 }}
@@ -74,7 +76,7 @@ const AmenitiesSection = () => {
             viewport={{ once: true }}
             className="text-sm md:text-base text-theme-text-secondary mt-4 max-w-md mx-auto font-normal leading-relaxed"
           >
-            Tailored to provide a premium Airbnb aesthetic with a cozy creator-focused atmosphere.
+            Tailored to provide a premium professional studio aesthetic with a creator-focused atmosphere.
           </motion.p>
         </div>
 
@@ -84,7 +86,7 @@ const AmenitiesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16"
         >
           {amenities.map((item, idx) => (
             <motion.div 
@@ -157,20 +159,20 @@ const AmenitiesSection = () => {
             </div>
 
             <p className="text-theme-text-secondary text-sm md:text-base leading-relaxed font-normal">
-              Indulge in a calm luxury atmosphere overlooking the sparkling night city lights of Greater Noida West. With floor-to-ceiling windows stepping out to a peaceful viewing balcony.
+              Indulge in a calm luxury atmosphere overlooking the sparkling night city lights of Greater Noida West. With floor-to-ceiling windows stepping out to a peaceful viewing balcony perfect for lifestyle & brand shoots.
             </p>
 
             {/* Coffee aesthetic text detail */}
             <div className="flex items-center gap-4 p-4 rounded-xl bg-warm-beige/5 border border-glass-border">
               <span className="text-2xl">☕</span>
               <div className="text-xs text-theme-text-secondary leading-relaxed font-normal">
-                Perfect for your morning coffee rituals or romantic evening wind-downs high above the urban hustle.
+                Perfect for outdoor lighting setups, lifestyle photography, or unwinding between creative sessions high above the urban hustle.
               </div>
             </div>
 
             {/* Micro Interaction Element */}
             <div className="flex items-center gap-2 text-xs text-warm-beige font-mono uppercase tracking-widest group-hover:translate-x-2 transition-transform duration-300">
-              <span>Calm Lifestyle Escape</span>
+              <span>Premium Shoot Location</span>
               <span>→</span>
             </div>
           </div>

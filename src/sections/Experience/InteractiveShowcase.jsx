@@ -28,20 +28,20 @@ const InteractiveShowcase = () => {
     {
       id: 1,
       src: "/img/the_lounge.jpeg",
-      title: "Premium Decor",
-      desc: "Elegant decorative accents adding a touch of luxury."
+      title: "Luxury Bedroom",
+      desc: "Elegant decorative accents and a king-size bed for fashion & lifestyle shoots."
     },
     {
       id: 2,
       src: "/img/the_suite.jpeg",
-      title: "Elegant Bedroom Suite",
-      desc: "Luxurious king-size bed with premium linens for ultimate comfort."
+      title: "Stylish Interior",
+      desc: "Minimalist setup with premium textures for high-end photography."
     },
     {
       id: 3,
       src: "/img/the_workspace.jpeg",
-      title: "Tea & Coffee Station",
-      desc: "Fully equipped beverage station with premium selections."
+      title: "Premium Workspace",
+      desc: "A beautifully lit desk setup perfect for podcasting and content creation."
     }
   ];
 
