@@ -12,7 +12,7 @@ const FooterSection = () => {
   };
 
   return (
-    <footer className="relative bg-theme-bg border-t border-glass-border pt-20 pb-12 z-10 transition-colors duration-700">
+    <footer className="relative bg-theme-bg border-t border-glass-border pt-16 md:pt-20 pb-10 md:pb-12 z-10 transition-colors duration-700">
       {/* Background Subtle Gradient (Optimized GPU radial-gradient) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-30">
         <div 
@@ -21,8 +21,8 @@ const FooterSection = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
           {/* Logo & Intro */}
           <div className="space-y-4 md:col-span-2">
             <span className="font-heading text-xl tracking-[0.25em] text-theme-text font-medium block">
@@ -89,9 +89,9 @@ const FooterSection = () => {
         </div>
 
         {/* Bottom copyright and legal */}
-        <div className="border-t border-glass-border/50 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-theme-text-secondary font-mono tracking-wider gap-4">
-          <p>© {currentYear} Dreamy Studio. All Rights Reserved.</p>
-          <div className="flex items-center gap-6">
+        <div className="border-t border-glass-border/50 pt-8 flex flex-col-reverse md:flex-row justify-between items-center text-xs text-theme-text-secondary font-mono tracking-wider gap-6 md:gap-4">
+          <p className="text-center md:text-left">© {currentYear} Dreamy Studio. All Rights Reserved.</p>
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
             <a 
               href="https://www.instagram.com/dreamy.studios21?igsh=OXo0N3o0djh0ZzIx" 
               target="_blank" 
