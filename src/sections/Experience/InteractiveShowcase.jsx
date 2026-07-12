@@ -46,22 +46,22 @@ const InteractiveShowcase = () => {
   ];
 
   return (
-    <section id="showcase" ref={containerRef} className="py-24 relative z-10 bg-theme-bg transition-colors duration-700">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+    <section id="showcase" ref={containerRef} className="py-16 md:py-24 relative z-10 bg-theme-bg transition-colors duration-700">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-4 md:gap-0">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="font-heading text-4xl md:text-6xl text-theme-text mb-4">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl text-theme-text mb-2 md:mb-4">
               Designed in <br />
               <span className="italic text-warm-beige">Details.</span>
             </h2>
           </motion.div>
           <motion.p 
-            className="text-theme-text-secondary max-w-sm md:text-right font-normal"
+            className="text-theme-text-secondary max-w-sm md:text-right font-normal text-sm md:text-base"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
