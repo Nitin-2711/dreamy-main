@@ -30,7 +30,7 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Reverted Content Layout: Original Premium Full-Bleed Expansive Typography */}
-      <div className="relative z-10 container mx-auto px-6 text-center mt-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 text-center mt-16 md:mt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,12 +39,12 @@ const HeroSection = () => {
           <p className="text-warm-beige text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium">
             Premium Creator Space Inside Galaxy Blue Sapphire
           </p>
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white max-w-5xl mx-auto leading-[1.1] mb-6 text-glow select-none">
+          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white max-w-5xl mx-auto leading-[1.1] mb-4 md:mb-6 text-glow select-none">
             Dreamy <br className="md:hidden" />
             <span className="italic text-warm-beige font-light">Studio</span>
           </h1>
 
-          <p className="text-theme-text-secondary text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-10 px-4 leading-relaxed">
+          <p className="text-theme-text-secondary text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
             A premium sanctuary designed for Photography • Videography • Podcast Recording • Product & Fashion Shoots • Content Creation • Meetings
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ const HeroSection = () => {
               const target = document.querySelector('#story');
               if (target) target.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="group relative px-8 py-4 bg-transparent overflow-hidden rounded-full border border-warm-beige/30 transition-all duration-500 hover:border-warm-beige/80 cursor-pointer inline-flex"
+            className="group relative px-6 md:px-8 py-3.5 md:py-4 min-h-[44px] bg-transparent overflow-hidden rounded-full border border-warm-beige/30 transition-all duration-500 hover:border-warm-beige/80 cursor-pointer inline-flex"
           >
             <div className="absolute inset-0 bg-warm-beige/10 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1]"></div>
             <span className="relative flex items-center gap-3 text-warm-beige text-sm tracking-widest uppercase font-medium">
