@@ -34,9 +34,9 @@ const ReviewsSection = () => {
   };
 
   return (
-    <section id="reviews" className="py-24 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="text-center mb-16">
+    <section id="reviews" className="py-16 md:py-24 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+        <div className="text-center mb-10 md:mb-16">
           <motion.span 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const ReviewsSection = () => {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-4xl md:text-5xl text-theme-text font-medium"
+            className="font-heading text-3xl md:text-5xl text-theme-text font-medium"
           >
             Words from <span className="italic text-warm-beige text-glow">Creators</span>
           </motion.h2>
@@ -60,7 +60,7 @@ const ReviewsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
         >
           {reviews.map((item, idx) => (
             <motion.div 
