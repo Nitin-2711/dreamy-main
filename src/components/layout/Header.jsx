@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Calendar, MessageCircle } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 
-const Header = () => {
+const Header = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
