@@ -39,9 +39,9 @@ const InteractiveShowcase = () => {
     },
     {
       id: 3,
-      src: "/img/the_workspace.jpeg",
-      title: "Premium Workspace",
-      desc: "A beautifully lit desk setup perfect for podcasting and content creation."
+      src: "/img/galaxy_blue_sapphire_architecture.jpeg",
+      title: "Galaxy Blue Sapphire",
+      desc: "Premium commercial hub perfect for creators and high-end brands."
     }
   ];
 
@@ -79,7 +79,7 @@ const InteractiveShowcase = () => {
               className="relative group cursor-none"
             >
               <div className="overflow-hidden rounded-2xl aspect-[3/4] relative glass">
-                <motion.div className="absolute inset-0 bg-theme-bg/40 group-hover:bg-transparent transition-colors duration-700 z-10" />
+                <motion.div className="absolute inset-0 bg-black/20 dark:bg-theme-bg/40 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
                 <LazyImage
                   src={item.src}
                   alt={item.title}
@@ -88,6 +88,7 @@ const InteractiveShowcase = () => {
                 />
                 
                 {/* Content Overlay */}
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent z-15 pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-0 left-0 w-full p-8 z-20 translate-y-4 group-hover:translate-y-0 opacity-80 group-hover:opacity-100 transition-all duration-500">
                   <h3 className="font-heading text-2xl text-white mb-2">{item.title}</h3>
                   <div className="h-[1px] w-0 group-hover:w-full bg-warm-beige transition-all duration-700 ease-out mb-4"></div>

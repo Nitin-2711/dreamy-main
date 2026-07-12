@@ -21,17 +21,17 @@
 
 @layer base {
   :root {
-    --bg-color: #FAF6F0;
-    --surface-color: #F0EDE7;
-    --card-color: #EAE6DF;
-    --text-primary: #1A1A1A;
-    --text-secondary: #555555;
-    --text-muted: #8F96A3;
-    --text-accent: #B89C7E;
+    --bg-color: #F8F7F3;
+    --surface-color: #F2EEE8;
+    --card-color: #FFFFFF;
+    --text-primary: #1C1C1C;
+    --text-secondary: #5B5B5B;
+    --text-muted: #777777;
+    --text-accent: #C8A96A;
     --accent-gold: #C8A96A;
     --accent-gold-hover: #D8B77A;
-    --glass-bg: rgba(255, 255, 255, 0.65);
-    --glass-border: rgba(200, 169, 106, 0.18);
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(0, 0, 0, 0.08);
     --text-glow-shadow: 0 1px 2px rgba(200, 169, 106, 0.1);
     --color-success-raw: #3FAE6A;
     --color-error-raw: #D9534F;
