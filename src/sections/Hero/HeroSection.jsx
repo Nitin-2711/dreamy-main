@@ -44,7 +44,7 @@ const HeroSection = () => {
             <span className="italic text-warm-beige font-light">Studio</span>
           </h1>
 
-          <p className="text-theme-text-secondary text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
+          <p className="text-white/80 text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
             A premium sanctuary designed for Photography • Videography • Podcast Recording • Product & Fashion Shoots • Content Creation • Meetings
           </p>
         </motion.div>

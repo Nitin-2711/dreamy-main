@@ -55,13 +55,13 @@ const StorySection = () => {
           >
             <div className="w-full h-full rounded-xl overflow-hidden relative">
               <LazyImage 
-                src="/img/plaza_environment.webp" 
+                src="/img/galaxy_blue_sapphire_architecture.jpeg" 
                 alt="Galaxy Blue Sapphire Plaza" 
                 className="w-full h-full"
                 imageClassName="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#0F1115]/25 z-10"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-transparent to-transparent opacity-80 z-10"></div>
+              <div className="absolute inset-0 bg-[#0F1115]/25 z-10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-theme-bg/80 to-transparent z-10 pointer-events-none"></div>
               
               {/* Studio Highlight Indicator Overlay */}
               <div className="absolute top-[35%] left-[62%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group/dot z-20">
