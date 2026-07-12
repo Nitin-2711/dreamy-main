@@ -43,10 +43,7 @@ const ContactSection = () => {
         </div>
 
         <div className="mt-12 md:mt-16 pt-8 border-t border-glass-border flex flex-wrap justify-center gap-6 md:gap-12">
-          <a href="mailto:contact@dreamystudios.com" className="text-theme-text/50 hover:text-warm-beige transition-colors duration-300 flex items-center gap-2 text-sm font-medium">
-            <Mail size={20} />
-            <span className="hidden sm:inline">Email Us</span>
-          </a>
+
           <a href="https://maps.google.com/?q=Galaxy+Blue+Sapphire+Plaza" target="_blank" rel="noreferrer" className="text-theme-text/50 hover:text-warm-beige transition-colors duration-300 flex items-center gap-2 text-sm font-medium">
             <MapPin size={20} />
             <span className="hidden sm:inline">Get Directions</span>
