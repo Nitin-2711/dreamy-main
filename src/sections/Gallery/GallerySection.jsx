@@ -71,11 +71,11 @@ const GallerySection = () => {
   const activeImages = galleryData[activeTab];
 
   return (
-    <section id="gallery" className="py-28 relative bg-theme-bg z-10 transition-colors duration-700">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="gallery" className="py-16 md:py-28 relative bg-theme-bg z-10 transition-colors duration-700">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6 md:gap-8">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -83,7 +83,7 @@ const GallerySection = () => {
             transition={{ duration: 1 }}
           >
             <span className="text-warm-beige text-xs tracking-[0.4em] uppercase mb-4 block font-semibold">Exquisite Showcases</span>
-            <h2 className="font-heading text-4xl md:text-5xl text-theme-text">
+            <h2 className="font-heading text-3xl md:text-5xl text-theme-text">
               The <span className="italic text-warm-beige text-glow">Visual Story</span>
             </h2>
           </motion.div>
@@ -94,13 +94,13 @@ const GallerySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex gap-2 p-1.5 rounded-full border border-glass-border glass backdrop-blur-md relative"
+            className="flex gap-2 p-1.5 rounded-full border border-glass-border glass backdrop-blur-md relative overflow-x-auto hide-scrollbar w-full md:w-auto"
           >
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative px-6 py-3 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-500 cursor-pointer ${
+                className={`relative px-4 md:px-6 py-2.5 md:py-3 whitespace-nowrap rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-500 cursor-pointer flex-shrink-0 ${
                   activeTab === tab.id 
                     ? 'text-[#0F1115]' 
                     : 'text-theme-text/75 hover:text-theme-text'
