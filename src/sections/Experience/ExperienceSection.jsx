@@ -26,23 +26,23 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 relative bg-theme-bg overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-16 md:py-24 relative bg-theme-bg overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div 
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="font-heading text-4xl md:text-5xl text-theme-text">
+          <h2 className="font-heading text-3xl md:text-5xl text-theme-text">
             Why <span className="italic text-warm-beige">Choose Us</span>
           </h2>
         </motion.div>
 
-        <div className="space-y-32">
+        <div className="space-y-16 md:space-y-32">
           {experiences.map((exp, idx) => (
-            <div key={idx} className={`flex flex-col ${idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-24`}>
+            <div key={idx} className={`flex flex-col ${idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-24`}>
               <motion.div 
                 className="w-full md:w-1/2"
                 initial={{ opacity: 0, x: idx % 2 === 1 ? 50 : -50 }}
@@ -71,8 +71,8 @@ const ExperienceSection = () => {
                 transition={{ duration: 1, delay: 0.3 }}
               >
                 <div className="text-warm-beige text-sm font-mono tracking-widest">0{idx + 1}</div>
-                <h3 className="font-heading text-3xl md:text-4xl text-theme-text">{exp.title}</h3>
-                <p className="text-theme-text-secondary text-lg max-w-md font-normal leading-relaxed">
+                <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl text-theme-text">{exp.title}</h3>
+                <p className="text-theme-text-secondary text-base md:text-lg max-w-md font-normal leading-relaxed">
                   {exp.desc}
                 </p>
                 <div className="pt-4">
