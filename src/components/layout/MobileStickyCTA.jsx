@@ -43,7 +43,7 @@ const MobileStickyCTA = () => {
               href="https://wa.me/918700961196?text=Hi%20Dreamy%20Studios%2021,%20I%20would%20like%20to%20know%20the%20pricing."
               target="_blank"
               rel="noreferrer"
-              className="flex-1 px-4 py-3 rounded-xl bg-warm-beige text-[#0F1115] font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:shadow-[0_0_15px_rgba(200,169,106,0.3)] transition-all"
+              className="flex-1 px-4 py-3 min-h-[44px] rounded-xl bg-warm-beige text-[#0F1115] font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:shadow-[0_0_15px_rgba(200,169,106,0.3)] transition-all"
             >
               <MessageCircle size={16} />
               WhatsApp
@@ -54,7 +54,7 @@ const MobileStickyCTA = () => {
               href="https://www.instagram.com/dreamy.studios21?igsh=OXo0N3o0djh0ZzIx"
               target="_blank"
               rel="noreferrer"
-              className="flex-1 px-4 py-3 rounded-xl bg-transparent border border-warm-beige/30 text-warm-beige font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:bg-warm-beige/10 transition-all"
+              className="flex-1 px-4 py-3 min-h-[44px] rounded-xl bg-transparent border border-warm-beige/30 text-warm-beige font-semibold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:bg-warm-beige/10 transition-all"
             >
               <FaInstagram size={16} />
               Instagram
