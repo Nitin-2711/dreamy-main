@@ -299,8 +299,6 @@ const BookingSection = () => {
                           onChange={(e) => setCheckInTime(e.target.value)}
                           className="bg-transparent text-theme-text border-none outline-none font-medium w-full cursor-pointer pr-4 appearance-none focus:ring-0"
                         >
-                          <option value="08:00 AM" className="bg-theme-bg text-theme-text">08:00 AM</option>
-                          <option value="09:00 AM" className="bg-theme-bg text-theme-text">09:00 AM</option>
                           <option value="11:00 AM" className="bg-theme-bg text-theme-text">11:00 AM (Default)</option>
                           <option value="01:00 PM" className="bg-theme-bg text-theme-text">01:00 PM</option>
                           <option value="03:00 PM" className="bg-theme-bg text-theme-text">03:00 PM</option>
