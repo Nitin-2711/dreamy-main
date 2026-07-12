@@ -5,7 +5,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-32 relative bg-theme-bg overflow-hidden flex justify-center">
+    <section id="contact" className="py-16 md:py-32 relative bg-theme-bg overflow-hidden flex justify-center">
       {/* Background Glow (Optimized GPU radial-gradient) */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
         <div 
@@ -15,14 +15,14 @@ const ContactSection = () => {
       </div>
 
       <motion.div 
-        className="relative z-10 glass-card p-10 md:p-16 max-w-2xl w-[90%] md:w-full text-center border-warm-beige/20"
+        className="relative z-10 glass-card p-6 sm:p-10 md:p-16 max-w-2xl w-[90%] md:w-full text-center border-warm-beige/20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       >
         <span className="text-warm-beige text-xs tracking-[0.3em] uppercase mb-4 block">Reserve The Studio</span>
-        <h2 className="font-heading text-4xl md:text-5xl text-theme-text mb-6">
+        <h2 className="font-heading text-3xl md:text-5xl text-theme-text mb-4 md:mb-6">
           Ready to <span className="italic text-warm-beige">Experience?</span>
         </h2>
         <p className="text-theme-text-secondary mb-12 font-normal max-w-md mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const ContactSection = () => {
 
         </div>
 
-        <div className="mt-16 pt-8 border-t border-glass-border flex flex-wrap justify-center gap-8 md:gap-12">
+        <div className="mt-12 md:mt-16 pt-8 border-t border-glass-border flex flex-wrap justify-center gap-6 md:gap-12">
           <a href="mailto:contact@dreamystudios.com" className="text-theme-text/50 hover:text-warm-beige transition-colors duration-300 flex items-center gap-2 text-sm font-medium">
             <Mail size={20} />
             <span className="hidden sm:inline">Email Us</span>
