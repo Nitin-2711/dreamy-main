@@ -5,8 +5,8 @@ const BookingSection = () => {
   // Booking States
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
-  const [checkInTime, setCheckInTime] = useState('02:00 PM');
-  const [checkOutTime, setCheckOutTime] = useState('11:00 AM');
+  const [checkInTime, setCheckInTime] = useState('11:00 AM');
+  const [checkOutTime, setCheckOutTime] = useState('10:00 AM');
   const [guests, setGuests] = useState(1);
   const [showCalendarPopup, setShowCalendarPopup] = useState(false);
   const [activeDateSelector, setActiveDateSelector] = useState('in'); // 'in' or 'out'
@@ -123,8 +123,9 @@ const BookingSection = () => {
   };
 
   const handleWhatsAppRedirect = () => {
-    const dateStr = checkInDate && checkOutDate ? `${formatDateString(checkInDate)} to ${formatDateString(checkOutDate)}` : 'Not Selected';
-    const message = `Hi Dreamy Studios 21, I would like to book Galaxy Blue Sapphire.\n\nPreferred Date: ${dateStr}\n\nVenue: Galaxy Blue Sapphire\n\nPlease share availability, pricing, and further details.`;
+    const checkInStr = checkInDate ? formatDateString(checkInDate) : 'Not Selected';
+    const checkOutStr = checkOutDate ? formatDateString(checkOutDate) : 'Not Selected';
+    const message = `Hi Dreamy Studios 21, I would like to book Galaxy Blue Sapphire.\n\nCheck-in: ${checkInStr} at ${checkInTime}\nCheck-out: ${checkOutStr} at ${checkOutTime}\nTeam Size: ${guests}\n\nVenue: Galaxy Blue Sapphire\n\nPlease share availability, pricing, and further details.`;
     window.open(`https://wa.me/918700961196?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -298,10 +299,10 @@ const BookingSection = () => {
                           onChange={(e) => setCheckInTime(e.target.value)}
                           className="bg-transparent text-theme-text border-none outline-none font-medium w-full cursor-pointer pr-4 appearance-none focus:ring-0"
                         >
-                          <option value="12:00 PM" className="bg-theme-bg text-theme-text">12:00 PM</option>
-                          <option value="02:00 PM" className="bg-theme-bg text-theme-text">02:00 PM (Default)</option>
-                          <option value="04:00 PM" className="bg-theme-bg text-theme-text">04:00 PM</option>
-                          <option value="06:00 PM" className="bg-theme-bg text-theme-text">06:00 PM</option>
+                          <option value="09:00 AM" className="bg-theme-bg text-theme-text">09:00 AM</option>
+                          <option value="11:00 AM" className="bg-theme-bg text-theme-text">11:00 AM (Default)</option>
+                          <option value="01:00 PM" className="bg-theme-bg text-theme-text">01:00 PM</option>
+                          <option value="03:00 PM" className="bg-theme-bg text-theme-text">03:00 PM</option>
                         </select>
                         <div className="absolute top-6 right-4 pointer-events-none text-warm-beige/40">
                           <Clock size={14} />
@@ -315,10 +316,10 @@ const BookingSection = () => {
                           onChange={(e) => setCheckOutTime(e.target.value)}
                           className="bg-transparent text-theme-text border-none outline-none font-medium w-full cursor-pointer pr-4 appearance-none focus:ring-0"
                         >
-                          <option value="09:00 AM" className="bg-theme-bg text-theme-text">09:00 AM</option>
-                          <option value="11:00 AM" className="bg-theme-bg text-theme-text">11:00 AM (Default)</option>
-                          <option value="01:00 PM" className="bg-theme-bg text-theme-text">01:00 PM</option>
-                          <option value="03:00 PM" className="bg-theme-bg text-theme-text">03:00 PM</option>
+                          <option value="08:00 AM" className="bg-theme-bg text-theme-text">08:00 AM</option>
+                          <option value="10:00 AM" className="bg-theme-bg text-theme-text">10:00 AM (Default)</option>
+                          <option value="12:00 PM" className="bg-theme-bg text-theme-text">12:00 PM</option>
+                          <option value="02:00 PM" className="bg-theme-bg text-theme-text">02:00 PM</option>
                         </select>
                         <div className="absolute top-6 right-4 pointer-events-none text-warm-beige/40">
                           <Clock size={14} />
