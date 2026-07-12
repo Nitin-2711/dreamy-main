@@ -54,6 +54,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
+          className="flex flex-col items-center gap-8"
         >
           <button 
             onClick={(e) => {
@@ -71,6 +72,18 @@ const HeroSection = () => {
               </svg>
             </span>
           </button>
+
+          {/* Premium Audience Highlight */}
+          <div className="flex flex-col items-center gap-3 max-w-2xl px-4 mt-2">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-warm-beige/10 bg-[#0F1115]/30 backdrop-blur-md shadow-sm">
+              <span className="text-warm-beige text-[11px] md:text-xs font-medium tracking-widest uppercase">
+                ✨ Perfect for Couples • Families • Friends • Creators • Professionals
+              </span>
+            </div>
+            <p className="text-white/60 text-[11px] md:text-xs font-light leading-relaxed text-center px-4 md:px-0">
+              Whether you're planning a relaxing stay, a content shoot, a romantic getaway, or quality time with family and friends, Dreamy Studio offers a comfortable and premium space for every occasion.
+            </p>
+          </div>
         </motion.div>
       </div>
 
