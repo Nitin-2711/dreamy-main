@@ -37,7 +37,7 @@ const AmenitiesSection = () => {
   };
 
   return (
-    <section id="amenities" className="py-32 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
+    <section id="amenities" className="py-16 md:py-32 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
       {/* Background Subtle Glows (Optimized GPU radial-gradients) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-50">
         <div 
@@ -50,10 +50,10 @@ const AmenitiesSection = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
         
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <motion.span 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const AmenitiesSection = () => {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-4xl md:text-5xl text-theme-text tracking-tight font-medium"
+            className="font-heading text-3xl md:text-5xl text-theme-text tracking-tight font-medium"
           >
             Curated <span className="italic text-warm-beige text-glow hover:text-glow-intense transition-all duration-300">Amenities</span>
           </motion.h2>
@@ -86,13 +86,13 @@ const AmenitiesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12 md:mb-16"
         >
           {amenities.map((item, idx) => (
             <motion.div 
               key={idx} 
               variants={itemVariants}
-              className="flex flex-col p-6 rounded-2xl glass-card border border-glass-border hover:border-warm-beige/40 hover:shadow-[0_10px_30px_rgba(200,169,106,0.08)] transition-all duration-500 relative group overflow-hidden"
+              className="flex flex-col p-5 md:p-6 rounded-2xl glass-card border border-glass-border hover:border-warm-beige/40 hover:shadow-[0_10px_30px_rgba(200,169,106,0.08)] transition-all duration-500 relative group overflow-hidden"
             >
               {/* Inner ambient glow behind icon on hover */}
               <div className="absolute -top-10 -left-10 w-24 h-24 bg-warm-beige/5 rounded-full group-hover:bg-warm-beige/10 blur-xl transition-all duration-500"></div>
@@ -127,7 +127,7 @@ const AmenitiesSection = () => {
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-warm-beige/30 to-transparent"></div>
           
           {/* Visual Showcase - Column 7 */}
-          <div className="lg:col-span-7 aspect-video lg:aspect-auto relative overflow-hidden min-h-[350px]">
+          <div className="lg:col-span-7 aspect-video lg:aspect-auto relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px]">
             <LazyImage 
               src={theme === 'dark' ? "/img/plaza_night.webp" : "/img/plaza_facade.webp"} 
               alt="Night View Visualization" 
@@ -146,7 +146,7 @@ const AmenitiesSection = () => {
           </div>
 
           {/* Descriptive Content - Column 5 */}
-          <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center space-y-6 relative z-10">
+          <div className="lg:col-span-5 p-6 md:p-8 lg:p-12 flex flex-col justify-center space-y-6 relative z-10">
             <div className="w-12 h-12 rounded-xl bg-warm-beige/10 flex items-center justify-center text-warm-beige mb-2">
               <Sunset size={24} />
             </div>
@@ -163,7 +163,7 @@ const AmenitiesSection = () => {
             </p>
 
             {/* Coffee aesthetic text detail */}
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-warm-beige/5 border border-glass-border">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 rounded-xl bg-warm-beige/5 border border-glass-border">
               <span className="text-2xl">☕</span>
               <div className="text-xs text-theme-text-secondary leading-relaxed font-normal">
                 Perfect for outdoor lighting setups, lifestyle photography, or unwinding between creative sessions high above the urban hustle.
