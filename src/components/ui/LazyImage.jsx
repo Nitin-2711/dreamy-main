@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const LazyImage = ({ src, alt, className = '', imageClassName = '', ...props }) => {
+const LazyImage = ({ src, alt, className = '', imageClassName = '', priority = false, ...props }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -14,7 +14,9 @@ const LazyImage = ({ src, alt, className = '', imageClassName = '', ...props }) 
       <motion.img
         src={src}
         alt={alt}
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        fetchpriority={priority ? "high" : "auto"}
+        decoding={priority ? "sync" : "async"}
         onLoad={() => setIsLoaded(true)}
         initial={{ opacity: 0, scale: 1.02 }}
         animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
