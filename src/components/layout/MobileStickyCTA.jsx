@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
 
-const MobileStickyCTA = () => {
+const MobileStickyCTA = memo(() => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

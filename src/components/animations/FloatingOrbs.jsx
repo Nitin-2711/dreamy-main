@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 
-const FloatingOrbs = () => {
+const FloatingOrbs = memo(() => {
   return (
     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden opacity-40 mix-blend-screen">
       {/* Orb 1: Warm Champagne Glow (Uses highly optimized GPU radial-gradient instead of expensive blur filters) */}
