@@ -64,6 +64,6 @@ const MobileStickyCTA = memo(() => {
       )}
     </AnimatePresence>
   );
-};
+});
 
 export default MobileStickyCTA;

@@ -235,6 +235,6 @@ const Header = memo(() => {
       </AnimatePresence>
     </>
   );
-};
+});
 
 export default Header;

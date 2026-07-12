@@ -73,6 +73,6 @@ const FloatingOrbs = memo(() => {
       />
     </div>
   );
-};
+});
 
 export default FloatingOrbs;
