@@ -48,7 +48,7 @@ const Header = () => {
             : 'py-6 bg-transparent border-b border-transparent'
         }`}
       >
-        <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center max-w-7xl">
           {/* Logo */}
           <a 
             href="#hero" 
@@ -89,7 +89,7 @@ const Header = () => {
             {/* Elegant Theme Switcher */}
             <button
               onClick={toggleTheme}
-              className={`w-10 h-10 rounded-full border flex items-center justify-center hover:border-warm-beige/50 hover:bg-warm-beige/5 transition-all duration-300 cursor-pointer ${
+              className={`w-11 h-11 rounded-full border flex items-center justify-center hover:border-warm-beige/50 hover:bg-warm-beige/5 transition-all duration-300 cursor-pointer ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Toggle Theme"
@@ -119,7 +119,7 @@ const Header = () => {
               href="https://www.instagram.com/dreamy.studios21?igsh=OXo0N3o0djh0ZzIx"
               target="_blank"
               rel="noreferrer"
-              className={`w-10 h-10 rounded-full border flex items-center justify-center hover:border-warm-beige/50 hover:bg-warm-beige/5 transition-all duration-300 cursor-pointer ${
+              className={`w-11 h-11 rounded-full border flex items-center justify-center hover:border-warm-beige/50 hover:bg-warm-beige/5 transition-all duration-300 cursor-pointer ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Instagram"
@@ -136,7 +136,7 @@ const Header = () => {
           <div className="flex md:hidden items-center gap-3">
             <button
               onClick={toggleTheme}
-              className={`w-9 h-9 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Toggle Theme"
@@ -146,7 +146,7 @@ const Header = () => {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`w-9 h-9 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Toggle Menu"
@@ -165,7 +165,7 @@ const Header = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-30 bg-theme-bg/95 backdrop-blur-2xl md:hidden flex flex-col justify-between p-8 pt-28"
+            className="fixed inset-0 z-30 bg-theme-bg/95 backdrop-blur-2xl md:hidden flex flex-col justify-between p-6 pt-28 overflow-y-auto"
           >
             {/* Background Ambient Spheres for Luxury feel */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40 overflow-hidden">
@@ -184,7 +184,7 @@ const Header = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className="font-heading text-3xl text-theme-text hover:text-warm-beige transition-colors"
+                  className="font-heading text-2xl sm:text-3xl text-theme-text hover:text-warm-beige transition-colors"
                 >
                   {item.label}
                 </motion.a>
@@ -192,7 +192,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Bottom Actions */}
-            <div className="flex flex-col gap-4 relative z-10">
+            <div className="flex flex-col gap-3 relative z-10 mt-8 mb-6">
               <a
                 href="#booking"
                 onClick={(e) => handleScrollTo(e, '#booking')}
