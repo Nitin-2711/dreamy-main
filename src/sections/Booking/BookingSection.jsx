@@ -125,7 +125,7 @@ const BookingSection = () => {
   const handleWhatsAppRedirect = () => {
     const checkInStr = checkInDate ? formatDateString(checkInDate) : 'Not Selected';
     const checkOutStr = checkOutDate ? formatDateString(checkOutDate) : 'Not Selected';
-    const message = `Hi Dreamy Studios 21, I would like to book Galaxy Blue Sapphire.\n\nCheck-in: ${checkInStr} at ${checkInTime}\nCheck-out: ${checkOutStr} at ${checkOutTime}\nTeam Size: ${guests}\n\nVenue: Galaxy Blue Sapphire\n\nPlease share availability, pricing, and further details.`;
+    const message = `Hi Dreamy Studios 21, I would like to book Galaxy Blue Sapphire.\n\nCheck-in: ${checkInStr} at ${checkInTime}\nCheck-out: ${checkOutStr} at ${checkOutTime}\nNumber of guest: ${guests}\n\nVenue: Galaxy Blue Sapphire\n\nPlease share availability, pricing, and further details.`;
     window.open(`https://wa.me/918700961196?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -344,7 +344,7 @@ const BookingSection = () => {
                     {/* Guests selection */}
                     <div className="p-4 rounded-xl border border-glass-border flex justify-between items-center">
                       <div>
-                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Team Size</span>
+                        <span className="block text-[10px] uppercase tracking-widest text-theme-text-secondary">Number of guest</span>
                         <span className="block font-heading text-lg mt-1">{guests} {guests > 1 ? 'People' : 'Person'}</span>
                       </div>
                       <div className="flex items-center gap-3">
