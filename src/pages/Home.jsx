@@ -19,9 +19,16 @@ const SectionFallback = () => (
   </div>
 );
 
+import { Helmet } from 'react-helmet-async';
+
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Dreamy Studio | Premium Photography & Content Creator Studio</title>
+        <meta name="description" content="Dreamy Studio is a premium photography and videography studio inside Galaxy Blue Sapphire Plaza, Greater Noida West. Experience an ultra modern content creator studio designed for podcasting and shoots." />
+        <link rel="canonical" href="https://dreamystudios21.netlify.app/" />
+      </Helmet>
       {/* Immediate render on initial load */}
       <HeroSection />
       <StorySection />

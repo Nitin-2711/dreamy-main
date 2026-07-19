@@ -3,9 +3,16 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
+import { Helmet } from 'react-helmet-async';
+
 const NotFound = () => {
   return (
-    <div className="min-h-screen w-full bg-[#0F1115] flex flex-col justify-between p-8 md:p-16 select-none relative overflow-hidden">
+    <>
+      <Helmet>
+        <title>404 - Page Not Found | Dreamy Studio</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <div className="min-h-screen w-full bg-[#0F1115] flex flex-col justify-between p-8 md:p-16 select-none relative overflow-hidden">
       {/* Background ambient glows (Optimized GPU radial-gradients) */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-30 overflow-hidden">
         <div 
@@ -68,6 +75,7 @@ const NotFound = () => {
         <span>© 2026 Dreamy Studio</span>
       </div>
     </div>
+    </>
   );
 };
 
