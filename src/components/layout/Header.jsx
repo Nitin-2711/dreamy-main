@@ -55,12 +55,12 @@ const Header = memo(() => {
             onClick={(e) => handleScrollTo(e, '#hero')}
             className="flex flex-col select-none group"
           >
-            <span className={`font-heading text-lg md:text-xl tracking-[0.25em] font-medium group-hover:text-glow transition-all duration-300 ${
+            <span className={`font-heading text-sm sm:text-base md:text-xl tracking-widest md:tracking-[0.25em] font-medium group-hover:text-glow transition-all duration-300 ${
               isScrolled ? 'text-theme-text' : 'text-white'
             }`}>
               DREAMY STUDIO
             </span>
-            <span className="text-[9px] font-mono tracking-[0.35em] text-warm-beige uppercase">
+            <span className="text-[8px] sm:text-[9px] font-mono tracking-widest sm:tracking-[0.35em] text-warm-beige uppercase">
               Galaxy Blue Sapphire
             </span>
           </a>
@@ -133,10 +133,10 @@ const Header = memo(() => {
           </div>
 
           {/* Mobile Menu Actions */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex md:hidden items-center gap-2 sm:gap-3">
             <button
               onClick={toggleTheme}
-              className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              className={`w-10 h-10 sm:w-11 sm:h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Toggle Theme"
@@ -146,7 +146,7 @@ const Header = memo(() => {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              className={`w-10 h-10 sm:w-11 sm:h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 isScrolled ? 'border-glass-border text-theme-text' : 'border-white/20 text-white'
               }`}
               aria-label="Toggle Menu"
@@ -165,7 +165,7 @@ const Header = memo(() => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-30 bg-theme-bg/95 backdrop-blur-2xl md:hidden flex flex-col justify-between p-6 pt-28 overflow-y-auto"
+            className="fixed inset-0 z-30 bg-theme-bg/95 backdrop-blur-2xl md:hidden flex flex-col justify-between p-4 sm:p-6 pt-24 overflow-y-auto"
           >
             {/* Background Ambient Spheres for Luxury feel */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40 overflow-hidden">

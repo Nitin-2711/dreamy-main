@@ -37,7 +37,7 @@ const AmenitiesSection = () => {
   };
 
   return (
-    <section id="amenities" className="py-16 md:py-32 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
+    <section id="amenities" className="py-12 sm:py-16 md:py-32 relative bg-theme-bg overflow-hidden z-10 transition-colors duration-700">
       {/* Background Subtle Glows (Optimized GPU radial-gradients) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-50">
         <div 
@@ -66,7 +66,7 @@ const AmenitiesSection = () => {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-3xl md:text-5xl text-theme-text tracking-tight font-medium"
+            className="font-heading text-2xl sm:text-3xl md:text-5xl text-theme-text tracking-tight font-medium"
           >
             Curated <span className="italic text-warm-beige text-glow hover:text-glow-intense transition-all duration-300">Amenities</span>
           </motion.h2>
@@ -134,9 +134,9 @@ const AmenitiesSection = () => {
               className="w-full h-full"
               imageClassName="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
             />
-            {/* Ambient overlay and reflections */}
-            <div className="absolute inset-0 bg-gradient-to-r from-theme-bg via-transparent to-transparent opacity-90 lg:opacity-75"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-transparent to-transparent opacity-80 lg:hidden"></div>
+            {/* Ambient overlay and reflections - Reduced opacity for clarity */}
+            <div className="absolute inset-0 bg-gradient-to-r from-theme-bg via-transparent to-transparent opacity-50 lg:opacity-30 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-transparent to-transparent opacity-40 lg:hidden pointer-events-none"></div>
             
             {/* Floating Glass Reflection Tag */}
             <div className="absolute top-6 left-6 glass border border-white/10 px-4 py-2 rounded-full backdrop-blur-md flex items-center gap-2">
@@ -146,14 +146,14 @@ const AmenitiesSection = () => {
           </div>
 
           {/* Descriptive Content - Column 5 */}
-          <div className="lg:col-span-5 p-6 md:p-8 lg:p-12 flex flex-col justify-center space-y-6 relative z-10">
-            <div className="w-12 h-12 rounded-xl bg-warm-beige/10 flex items-center justify-center text-warm-beige mb-2">
-              <Sunset size={24} />
+          <div className="lg:col-span-5 p-5 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-center space-y-4 sm:space-y-6 relative z-10">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-warm-beige/10 flex items-center justify-center text-warm-beige mb-1 sm:mb-2">
+              <Sunset size={24} className="scale-75 sm:scale-100" />
             </div>
 
             <div>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-warm-beige block mb-2 font-mono">Premium Spotlight</span>
-              <h3 className="font-heading text-2xl md:text-3xl text-theme-text leading-tight">
+              <span className="text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] uppercase text-warm-beige block mb-1 sm:mb-2 font-mono">Premium Spotlight</span>
+              <h3 className="font-heading text-xl sm:text-2xl md:text-3xl text-theme-text leading-tight">
                 Private <span className="italic text-warm-beige">Balcony View</span>
               </h3>
             </div>

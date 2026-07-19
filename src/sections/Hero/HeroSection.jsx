@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section id="hero" className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
       {/* Background Image with Parallax & Zoom effect (Optimized for GPU acceleration) */}
       <motion.div
-        className="absolute inset-0 z-0 brightness-[0.5]"
+        className="absolute inset-0 z-0 brightness-[0.7]"
         initial={{ scale: 1.08, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2.2, ease: 'easeOut' }}
@@ -23,11 +23,11 @@ const HeroSection = () => {
           loading="eager"
           decoding="sync"
         />
-        {/* Subtle Dark Overlay (25%) to improve text readability without hiding the building */}
-        <div className="absolute inset-0 bg-[#0F1115]/25 z-[1]" />
-        {/* Cinematic Vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(15,17,21,0.8)_100%)] z-[2]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-theme-bg opacity-90 transition-colors duration-700 z-[3]" />
+        {/* Subtler Dark Overlay to improve image clarity */}
+        <div className="absolute inset-0 bg-[#0F1115]/10 z-[1]" />
+        {/* Lighter Cinematic Vignette */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(15,17,21,0.5)_100%)] z-[2]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-theme-bg opacity-70 transition-colors duration-700 z-[3]" />
       </motion.div>
 
       {/* Reverted Content Layout: Original Premium Full-Bleed Expansive Typography */}
@@ -37,15 +37,15 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="text-warm-beige text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium">
+          <p className="text-warm-beige text-xs sm:text-sm md:text-base tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 font-medium">
             Premium Creator Space Inside Galaxy Blue Sapphire
           </p>
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white max-w-5xl mx-auto leading-[1.1] mb-4 md:mb-6 text-glow select-none">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white max-w-5xl mx-auto leading-[1.15] sm:leading-[1.1] mb-4 md:mb-6 text-glow select-none">
             Dreamy <br className="md:hidden" />
             <span className="italic text-warm-beige font-light">Studio</span>
           </h1>
 
-          <p className="text-white/80 text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
+          <p className="text-white/80 text-xs sm:text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-8 md:mb-10 px-2 sm:px-4 leading-relaxed">
             A premium sanctuary designed for Photography • Videography • Podcast Recording • Product & Fashion Shoots • Content Creation • Meetings
           </p>
         </motion.div>
@@ -74,13 +74,13 @@ const HeroSection = () => {
           </button>
 
           {/* Premium Audience Highlight */}
-          <div className="flex flex-col items-center gap-3 max-w-2xl px-4 mt-2">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-warm-beige/10 bg-[#0F1115]/30 backdrop-blur-md shadow-sm">
-              <span className="text-warm-beige text-[11px] md:text-xs font-medium tracking-widest uppercase">
+          <div className="flex flex-col items-center gap-3 max-w-2xl px-2 sm:px-4 mt-2">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-warm-beige/10 bg-[#0F1115]/30 backdrop-blur-md shadow-sm">
+              <span className="text-warm-beige text-[9px] sm:text-[10px] md:text-xs font-medium tracking-widest uppercase">
                 ✨ Perfect for Couples • Families • Friends • Creators • Professionals
               </span>
             </div>
-            <p className="text-white/60 text-[11px] md:text-xs font-light leading-relaxed text-center px-4 md:px-0">
+            <p className="text-white/60 text-[10px] sm:text-[11px] md:text-xs font-light leading-relaxed text-center px-4 md:px-0">
               Whether you're planning a relaxing stay, a content shoot, a romantic getaway, or quality time with family and friends, Dreamy Studio offers a comfortable and premium space for every occasion.
             </p>
           </div>

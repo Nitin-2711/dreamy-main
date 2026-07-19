@@ -21,7 +21,7 @@ const StorySection = () => {
   };
 
   return (
-    <section id="story" className="py-16 md:py-32 lg:py-48 relative bg-theme-bg z-10">
+    <section id="story" className="py-12 sm:py-16 md:py-32 lg:py-48 relative bg-theme-bg z-10">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
         <motion.div 
           variants={containerVariants}
@@ -36,14 +36,14 @@ const StorySection = () => {
           
           <motion.h2 
             variants={itemVariants}
-            className="font-heading text-2xl sm:text-3xl md:text-5xl text-theme-text leading-[1.3] font-medium mb-8 md:mb-10 text-glow"
+            className="font-heading text-xl sm:text-2xl md:text-4xl lg:text-5xl text-theme-text leading-[1.3] font-medium mb-6 sm:mb-8 md:mb-10 text-glow"
           >
             A canvas crafted for the <span className="italic text-warm-beige font-normal">modern creator.</span> <br className="hidden md:block" />
             Where professional aesthetics meet the calm of a private luxury haven.
           </motion.h2>
 
           <motion.div variants={itemVariants} className="max-w-2xl mx-auto">
-            <p className="text-theme-text-secondary text-base md:text-lg leading-relaxed font-normal">
+            <p className="text-theme-text-secondary text-sm sm:text-base md:text-lg leading-relaxed font-normal">
               Elevated high above the vibrant streets of Galaxy Blue Sapphire Plaza, Dreamy Studio isn’t just another space—it’s a carefully curated production environment for premium content creation. Designed with deep, matte tones, luxury lighting, and bespoke aesthetics, it provides the perfect backdrop for photography, videography, podcasting, and high-level meetings.
             </p>
           </motion.div>
@@ -60,8 +60,8 @@ const StorySection = () => {
                 className="w-full h-full"
                 imageClassName="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#0F1115]/25 z-10 pointer-events-none"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-theme-bg/80 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[#0F1115]/10 z-10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-theme-bg via-theme-bg/60 to-transparent z-10 pointer-events-none"></div>
               
               {/* Studio Highlight Indicator Overlay */}
               <div className="absolute top-[35%] left-[62%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group/dot z-20">
@@ -75,9 +75,9 @@ const StorySection = () => {
               </div>
               
               {/* Info Overlay */}
-              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 text-left z-20">
-                <h4 className="font-heading text-lg md:text-xl lg:text-2xl text-theme-text mt-1">Galaxy Blue Sapphire Plaza</h4>
-                <p className="text-xs md:text-sm text-theme-text-secondary mt-1 md:mt-2 max-w-2xl leading-relaxed">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 md:bottom-6 md:left-6 md:right-6 text-left z-20">
+                <h4 className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl text-theme-text mt-1">Galaxy Blue Sapphire Plaza</h4>
+                <p className="text-[10px] sm:text-xs md:text-sm text-theme-text-secondary mt-1 md:mt-2 max-w-2xl leading-relaxed">
                   Located in Greater Noida West, Galaxy Blue Sapphire Plaza is a premium mixed-use destination known for its modern glass architecture, vibrant commercial spaces, dining options, and excellent connectivity.
                 </p>
               </div>
